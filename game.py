@@ -18,7 +18,7 @@ class Game:
 
         # 자동차와 장애물의 초기 위치와, 장애물 각각의 속도를 정합니다.
         self.car = [
-            {"col": 0, "row": 5}
+            {"col": 0, "row": 5},
             {"col": 0, "row": 4}
         ]
 
@@ -254,7 +254,7 @@ class Game:
              (self.car[1]["col"] == self.block[3]["col"] or self.car[1]["col"] == (self.block[3]["col"] + 1))) or
               # 두 차가 겹칠 때
             (self.car[0]["col"] == self.car[1]["col"] and
-             self.car[0]["row"] == self.car[1]["row])
+             self.car[0]["row"] == self.car[1]["row"])
            ):
 
             self.total_reward += self.current_reward
