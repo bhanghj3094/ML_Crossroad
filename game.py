@@ -18,7 +18,7 @@ class Game:
         # 자동차와 장애물의 초기 위치와, 장애물 각각의 속도를 정합니다.
         self.car = [
             {"col": 0, "row": 5},
-            {"col": 0, "row": 5},
+            {"col": 0, "row": 4},
         ]
 
         self.block = [

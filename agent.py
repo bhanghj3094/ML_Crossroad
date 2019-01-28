@@ -151,7 +151,7 @@ def replay():
             brain.remember(state, action, reward, terminal)
 
             # 게임 진행을 인간이 인지할 수 있는 속도로^^; 보여줍니다.
-            time.sleep(0.05)
+            time.sleep(0.3)
 
         print('게임횟수: %d 점수: %d' % (episode + 1, total_reward))
 
