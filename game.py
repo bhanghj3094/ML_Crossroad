@@ -10,7 +10,6 @@ class Game:
     def __init__(self, screen_width, screen_height, show_game=True):
         self.screen_width = screen_width
         self.screen_height = screen_height
-        self.screen_height = screen_height
         # 도로의 크기는 스크린의 반으로 정하며, 도로의 좌측 우측의 여백을 계산해둡니다.
         self.road_width = int(screen_width / 2)  # 5
         self.road_left = int(self.road_width / 2 + 1)  # 3
@@ -19,7 +18,7 @@ class Game:
         # 자동차와 장애물의 초기 위치와, 장애물 각각의 속도를 정합니다.
         self.car = [
             {"col": 0, "row": 5},
-            {"col": 0, "row": 4}
+            {"col": 0, "row": 5},
         ]
 
         self.block = [
@@ -141,10 +140,11 @@ class Game:
         self.current_reward = 0
         self.total_game += 1
 
-        self.car[0]["col"] = int(self.screen_width / 2)
-        self.car[0]["row"] = int(self.screen_height / 2)
-        self.car[1]["col"] = int(self.screen_width / 2 + 1)
-        self.car[1]["row"] = int(self.screen_height / 2 + 1)
+        self.car[0]["col"] = 3  # int(self.screen_width / 2)
+        self.car[0]["row"] = 5  # int(self.screen_height / 2)
+        self.car[1]["col"] = 5  # int(self.screen_width / 2)
+        self.car[1]["row"] = 3  # int(self.screen_height / 2)
+        # print("self.car[1] col, row: ", self.car[1]["col"], self.car[1]["row"])
 
         self.block[0]["col"] = random.randrange(self.road_left, self.road_right + 1)
         self.block[0]["row"] = 0
@@ -166,27 +166,31 @@ class Game:
         도로를 넘어가면 패널티를 주도록 학습해서 도로를 넘지 않게 만들면 더욱 좋을 것 같습니다.
         """
         # move = 0~24 를 5로 나눠 나머지는 첫번째 차, 몫은 두번째 차.
-        # remainder, quotient 각각 0~4  0: 좌, 1: 유지, 2: 우, 3: 위, 4: 아래
-        remainder = move % 5
-        quotient = move / 5
+        # remainder, quotient 각각 0~4  0: 좌, 1: 유지, 2: 우, 3: 아래, 4: 위
+        remainder = int(move % 5)
+        quotient = int(move / 5)
+        # print("remainder, quotient: ", remainder, quotient)
 
         self.move_car(0, remainder)
         self.move_car(1, quotient)
 
 
     def move_car(self, car_number, move):
-        # 가로로 움직일 때
-        if move < 3:
+        # 가로로 움직일 때 0, 1, 2
+        if move == 0:  # 좌
             # 자동차의 위치가 도로의 좌측을 넘지 않도록 합니다: max(0, move) > 0
-            self.car[car_number]["col"] = max(self.road_left, self.car[car_number]["col"] + move)
+            self.car[car_number]["col"] = max(self.road_left, self.car[car_number]["col"] - 1)
+        elif move == 1:  # 유지
+            return
+        elif move == 2:  # 우
             # 자동차의 위치가 도로의 우측을 넘지 않도록 합니다.: min(max, screen_width) < screen_width
-            self.car[car_number]["col"] = min(self.car[car_number]["col"], self.road_right) # 여기는 이미 move 한 후의 상태
-        # 세로로 움직일 때
-        elif move == 3:  # up
-            # 자동차의 위치가 도로의 위측을 넘지 않도록 합니다: max(0, move) > 0
+            self.car[car_number]["col"] = min(self.car[car_number]["col"] + 1, self.road_right)
+        # 세로로 움직일 때 3, 4
+        elif move == 3:  # down
+            # 자동차의 위치가 도로의 아래측을 넘지 않도록 합니다: max(0, move) > 0
             self.car[car_number]["row"] = max(self.road_left, self.car[car_number]["row"] - 1)
-        else:  # move == 4 down
-            # 자동차의 위치가 도로의 아래측을 넘지 않도록 합니다: min(max, screen_width) < screen_width
+        else:  # move == 4 up
+            # 자동차의 위치가 도로의 위측을 넘지 않도록 합니다: min(max, screen_width) < screen_width
             self.car[car_number]["row"] = min(self.car[car_number]["row"] + 1, self.road_right)
 
 
@@ -263,7 +267,7 @@ class Game:
             return False
 
     def step(self, action):
-        # action: 0: 좌, 1: 유지, 2: 우, 3: 위, 4: 아래   나머지 => 첫번째 차, 몫 => 2번째 차
+        # action: 0: 좌, 1: 유지, 2: 우, 3: 아래, 4: 위   나머지 => 첫번째 차, 몫 => 2번째 차
         self._update_car(action)
         # 장애물을 이동시킵니다. 장애물이 자동차에 충돌하지 않고 화면을 모두 지나가면 보상을 얻습니다.
         escape_reward = self._update_block()
