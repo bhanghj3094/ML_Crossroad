@@ -14,15 +14,15 @@ class Game:
         # 도로의 크기는 스크린의 반으로 정하며, 도로의 좌측 우측의 여백을 계산해둡니다.
         self.road_width = int(screen_width / 2)  # 4
         self.road_left = int(self.road_width / 2 + 1)  # 3
-        self.road_right = int(self.road_left + self.road_width - 1) # 6
+        self.road_right = int(self.road_left + self.road_width - 1)  # 6
 
         # 자동차와 장애물의 초기 위치와, 장애물 각각의 속도를 정합니다.
-        self.car = {"col": 0, "row": 5}
+        self.car = {"col": 0, "row": 2}
         self.block = [
             {"col": 0, "row": 0, "speed": 1},
-            {"col": 0, "row": 0, "speed": 2},
-            {"col": 0, "row": 0, "speed": 2},
-            {"col": 0, "row": 0, "speed": 3},
+            {"col": 0, "row": 0, "speed": 1},
+            {"col": 0, "row": 0, "speed": 1},
+            {"col": 0, "row": 0, "speed": 1},
         ]
 
         self.total_reward = 0.
@@ -36,8 +36,8 @@ class Game:
     def _prepare_display(self):
         """게임을 화면에 보여주기 위해 matplotlib 으로 출력할 화면을 설정합니다."""
         """return figure and object or array of Axes objects"""
-        fig, axis = plt.subplots(figsize=(9, 9))
-        fig.set_size_inches(9, 9)
+        fig, axis = plt.subplots(figsize=(10, 10))
+        fig.set_size_inches(10, 10)
         # 화면을 닫으면 프로그램을 종료합니다.
         fig.canvas.mpl_connect('close_event', exit)
         plt.axis((0, self.screen_width, 0, self.screen_height))
@@ -81,12 +81,12 @@ class Game:
 
         return state
 
+
     def _draw_screen(self):
         title = " Avg. Reward: %d Reward: %d Total Game: %d" % (
                         self.total_reward / self.total_game,
                         self.current_reward,
                         self.total_game)
-
         # self.axis.clear()
         self.axis.set_title(title, fontsize=12)
 
@@ -94,7 +94,7 @@ class Game:
                                  self.road_width + 1, self.screen_height,
                                  linewidth=0, facecolor="#333333")
         road2 = patches.Rectangle((0, self.road_left - 1),
-                                 self.screen_height, self.road_width + 1,
+                                 self.screen_width, self.road_width + 1,
                                  linewidth=0, facecolor="#333333")
         # 자동차, 장애물들을 1x1 크기의 정사각형으로 그리도록하며, 좌표를 기준으로 중앙에 위치시킵니다.
         # 자동차의 경우에는 장애물과 충돌시 확인이 가능하도록 0.5만큼 아래쪽으로 이동하여 그립니다.
@@ -126,6 +126,7 @@ class Game:
         # 게임의 다음 단계 진행을 위해 matplot 의 이벤트 루프를 잠시 멈춥니다.
         plt.pause(0.0001)
 
+
     def reset(self):
         """자동차, 장애물의 위치와 보상값들을 초기화합니다."""
         self.current_reward = 0
@@ -138,14 +139,15 @@ class Game:
         self.block[0]["row"] = 0
         self.block[1]["col"] = random.randrange(self.road_left, self.road_right + 1)
         self.block[1]["row"] = 0
-        self.block[2]["col"] = 0
         self.block[2]["row"] = random.randrange(self.road_left, self.road_right + 1)
-        self.block[3]["col"] = 0
+        self.block[2]["col"] = 0
         self.block[3]["row"] = random.randrange(self.road_left, self.road_right + 1)
+        self.block[3]["col"] = 0
 
         self._update_block()
 
         return self._get_state()
+
 
     def _update_car(self, move):
         """액션에 따라 자동차를 이동시킵니다.
@@ -153,20 +155,19 @@ class Game:
         자동차 위치 제한을 도로가 아니라 화면의 좌우측 끝으로 하고,
         도로를 넘어가면 패널티를 주도록 학습해서 도로를 넘지 않게 만들면 더욱 좋을 것 같습니다.
         """
-
         # 가로로 움직일 때
         if move < 2:
             # 자동차의 위치가 도로의 좌측을 넘지 않도록 합니다: max(0, move) > 0
             self.car["col"] = max(self.road_left, self.car["col"] + move)
             # 자동차의 위치가 도로의 우측을 넘지 않도록 합니다.: min(max, screen_width) < screen_width
             self.car["col"] = min(self.car["col"], self.road_right) # 여기는 이미 move 한 후의 상태
-        elif move == 2:  # up
-            # 자동차의 위치가 도로의 위측을 넘지 않도록 합니다: max(0, move) > 0
+        # 세로로 움직일 때
+        elif move == 2:  # down
+            # 자동차의 위치가 도로의 아래측을 넘지 않도록 합니다: max(0, move) > 0
             self.car["row"] = max(self.road_left, self.car["row"] - 1)
-        else:  # move == 3 down
-            # 자동차의 위치가 도로의 아래측을 넘지 않도록 합니다: min(max, screen_width) < screen_width
+        else:  # move == 3 up
+            # 자동차의 위치가 도로의 위측을 넘지 않도록 합니다: min(max, screen_width) < screen_width
             self.car["row"] = min(self.car["row"] + 1, self.road_right)
-
 
 
     def _update_block(self):
@@ -181,7 +182,7 @@ class Game:
         if self.block[0]["row"] > 0:
             self.block[0]["row"] -= self.block[0]["speed"]
         else:
-            self.block[0]["col"] = random.randrange(self.road_left, self.road_right + 1) # 2, 3, 4
+            self.block[0]["col"] = random.randrange(self.road_left, self.road_right + 1)  # 3, 4, 5, 6
             self.block[0]["row"] = self.screen_height
             reward += 1
 
@@ -196,15 +197,15 @@ class Game:
         if self.block[2]["col"] > 0:
             self.block[2]["col"] -= self.block[2]["speed"]
         else:
-            self.block[2]["row"] = random.randrange(self.road_left, self.road_right + 1) # 2, 3, 4
-            self.block[2]["col"] = self.screen_height
+            self.block[2]["row"] = random.randrange(self.road_left, self.road_right + 1)
+            self.block[2]["col"] = self.screen_width
             reward += 1
 
         if self.block[3]["col"] > 0:
             self.block[3]["col"] -= self.block[3]["speed"]
         else:
             self.block[3]["row"] = random.randrange(self.road_left, self.road_right + 1)
-            self.block[3]["col"] = self.screen_height
+            self.block[3]["col"] = self.screen_width
             reward += 1
 
         return reward
@@ -212,13 +213,22 @@ class Game:
     def _is_gameover(self):
         # 장애물과 자동차가 충돌했는지를 파악합니다.
         # 사각형 박스의 충돌을 체크하는 것이 아니라 좌표를 체크하는 것이어서 화면에는 약간 다르게 보일 수 있습니다.
+        # if ((self.car["col"] == self.block[0]["col"] and
+        #      self.close_enough(self.car["row"], self.block[0]["row"])) or
+        #     (self.car["col"] == self.block[1]["col"] and
+        #      self.close_enough(self.car["row"], self.block[1]["row"])) or
+        #     (self.car["row"] == self.block[2]["row"] and
+        #      self.close_enough(self.car["col"], self.block[2]["col"])) or
+        #     (self.car["row"] == self.block[3]["row"] and
+        #      self.close_enough(self.car["col"], self.block[3]["col"]))):
+
         if ((self.car["col"] == self.block[0]["col"] and
-             self.car["row"] == self.block[0]["row"]) or
+             (self.car["row"] == self.block[0]["row"] or self.car["row"] == (self.block[0]["row"] + 1))) or
             (self.car["col"] == self.block[1]["col"] and
-             self.car["row"] == self.block[1]["row"]) or
-            (self.car["col"] == self.block[2]["col"] and
+             (self.car["row"] == self.block[1]["row"] or self.car["row"] == (self.block[1]["row"] + 1))) or
+            ((self.car["col"] == self.block[2]["col"] or self.car["col"] == (self.block[2]["col"] + 1)) and
              self.car["row"] == self.block[2]["row"]) or
-            (self.car["col"] == self.block[3]["col"] and
+            ((self.car["col"] == self.block[3]["col"] or self.car["col"] == (self.block[3]["col"] + 1)) and
              self.car["row"] == self.block[3]["row"])):
 
             self.total_reward += self.current_reward
@@ -227,8 +237,9 @@ class Game:
         else:
             return False
 
+
     def step(self, action):
-        # action: 0: 좌, 1: 유지, 2: 우, 3: 위, 4: 아래
+        # action: 0: 좌, 1: 유지, 2: 우, 3: 아래, 4: 위
         # action - 1 을 하여, 좌표를 액션이 0 일 경우 -1 만큼, 2 일 경우 1 만큼 옮깁니다.
         self._update_car(action - 1)
         # 장애물을 이동시킵니다. 장애물이 자동차에 충돌하지 않고 화면을 모두 지나가면 보상을 얻습니다.

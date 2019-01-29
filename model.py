@@ -19,7 +19,7 @@ class DQN:
     STATE_LEN = 4
 
     def __init__(self, session, width, height, n_action):
-        #print("DQN __init__")
+        # print("DQN __init__")
         self.session = session
         self.n_action = n_action
         self.width = width
@@ -28,7 +28,6 @@ class DQN:
         self.memory = deque()
         # 현재 게임판의 상태
         self.state = None
-        #print("DQN width, height : ", width, height)
 
         # 게임의 상태를 입력받을 변수
         # [게임판의 가로 크기, 게임판의 세로 크기, 게임 상태의 갯수(현재+과거+과거..)]
@@ -38,19 +37,16 @@ class DQN:
         # 손실값을 계산하는데 사용할 입력값입니다. train 함수를 참고하세요.
         self.input_Y = tf.placeholder(tf.float32, [None])
 
-        #print("DQN init input_XAY done")
-
         self.Q = self._build_network('main')
         self.cost, self.train_op = self._build_op()
 
         # 학습을 더 잘 되게 하기 위해,
-        # 손실값 계산을 위해 사용하는 타겟(실측값)의 Q value를 계산하는 네트웍을 따로 만들어서 사용합니다
+        # 손실값 계산을 위해 사용하는 타겟(실측값)의 Q value 를 계산하는 네트웍을 따로 만들어서 사용합니다
         self.target_Q = self._build_network('target')
 
-        #print("DQN __init__ done")
+        # print("DQN __init__ done")
 
     def _build_network(self, name):
-        #print("build network begin")
         with tf.variable_scope(name):
             model = tf.layers.conv2d(self.input_X, 32, [4, 4], padding='same', activation=tf.nn.relu)
             model = tf.layers.conv2d(model, 64, [2, 2], padding='same', activation=tf.nn.relu)
@@ -62,7 +58,6 @@ class DQN:
         return Q
 
     def _build_op(self):
-        #print("_build_op begin")
         # DQN 의 손실 함수를 구성하는 부분입니다. 다음 수식을 참고하세요.
         # Perform a gradient descent step on (y_j-Q(ð_j,a_j;θ))^2
         one_hot = tf.one_hot(self.input_A, self.n_action, 1.0, 0.0)
@@ -74,7 +69,6 @@ class DQN:
 
     # refer: https://github.com/hunkim/ReinforcementZeroToAll/
     def update_target_network(self):
-        #print("update_target_network begin")
         copy_op = []
 
         main_vars = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, scope='main')
@@ -87,7 +81,6 @@ class DQN:
         self.session.run(copy_op)
 
     def get_action(self):
-        #print("get_action begin")
         Q_value = self.session.run(self.Q,
                                    feed_dict={self.input_X: [self.state]})
 
@@ -96,7 +89,6 @@ class DQN:
         return action
 
     def init_state(self, state):
-        #print("init_state begin")
         # 현재 게임판의 상태를 초기화합니다. 앞의 상태까지 고려한 스택으로 되어 있습니다.
         state = [state for _ in range(self.STATE_LEN)]
         # axis=2 는 input_X 의 값이 다음처럼 마지막 차원으로 쌓아올린 형태로 만들었기 때문입니다.
@@ -105,7 +97,6 @@ class DQN:
         self.state = np.stack(state, axis=2)
 
     def remember(self, state, action, reward, terminal):
-        #print("remember begin")
         # 학습데이터로 현재의 상태만이 아닌, 과거의 상태까지 고려하여 계산하도록 하였고,
         # 이 모델에서는 과거 3번 + 현재 = 총 4번의 상태를 계산하도록 하였으며,
         # 새로운 상태가 들어왔을 때, 가장 오래된 상태를 제거하고 새로운 상태를 넣습니다.
@@ -122,7 +113,6 @@ class DQN:
         self.state = next_state
 
     def _sample_memory(self):
-        #print("_sample_memory begin")
         sample_memory = random.sample(self.memory, self.BATCH_SIZE)
 
         state = [memory[0] for memory in sample_memory]
@@ -134,7 +124,7 @@ class DQN:
         return state, next_state, action, reward, terminal
 
     def train(self):
-        #print("train begin")
+        # print("train begin")
         # 게임 플레이를 저장한 메모리에서 배치 사이즈만큼을 샘플링하여 가져옵니다.
         state, next_state, action, reward, terminal = self._sample_memory()
 
