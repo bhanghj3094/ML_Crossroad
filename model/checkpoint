@@ -1,6 +1,0 @@
-model_checkpoint_path: "dqn.ckpt-7084298"
-all_model_checkpoint_paths: "dqn.ckpt-7001998"
-all_model_checkpoint_paths: "dqn.ckpt-7023666"
-all_model_checkpoint_paths: "dqn.ckpt-7042583"
-all_model_checkpoint_paths: "dqn.ckpt-7067383"
-all_model_checkpoint_paths: "dqn.ckpt-7084298"

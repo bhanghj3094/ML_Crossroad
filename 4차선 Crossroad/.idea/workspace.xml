@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8305703f-4225-4122-8ce4-4901bd35c708" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/3차선 도로 training.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/new logs/events.out.tfevents.1548402190.Q-PC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/new model/dqn.ckpt-1194346.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/new model/dqn.ckpt-1194346.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/new model/dqn.ckpt-1194346.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/new model/dqn.ckpt-482671.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/new model/dqn.ckpt-482671.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/new model/dqn.ckpt-482671.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/new model/dqn.ckpt-598451.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/new model/dqn.ckpt-598451.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/new model/dqn.ckpt-598451.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/new model/dqn.ckpt-743781.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/new model/dqn.ckpt-743781.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/new model/dqn.ckpt-743781.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/new model/dqn.ckpt-911047.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/new model/dqn.ckpt-911047.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/new model/dqn.ckpt-911047.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/old logs/events.out.tfevents.1497009719.mpr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/old model/dqn.ckpt-1013377.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/old model/dqn.ckpt-1013377.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/old model/dqn.ckpt-1013377.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/old model/dqn.ckpt-1092695.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/old model/dqn.ckpt-1092695.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/old model/dqn.ckpt-1092695.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/old model/dqn.ckpt-1205475.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/old model/dqn.ckpt-1205475.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/old model/dqn.ckpt-1205475.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/old model/dqn.ckpt-1340046.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/old model/dqn.ckpt-1340046.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/old model/dqn.ckpt-1340046.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/old model/dqn.ckpt-1708830.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/old model/dqn.ckpt-1708830.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/3 레인 logmodel/old model/dqn.ckpt-1708830.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/4차선 도로 training.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/logs/events.out.tfevents.1548573302.Q-PC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/logs/events.out.tfevents.1548573415.Q-PC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/logs/events.out.tfevents.1548573428.Q-PC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/logs/events.out.tfevents.1548573460.Q-PC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/logs/events.out.tfevents.1548574515.Q-PC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/logs/events.out.tfevents.1548576403.Q-PC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/logs/events.out.tfevents.1548578631.Q-PC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/logs/events.out.tfevents.1548578852.Q-PC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-10.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-10.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-10.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-1199.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-1199.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-1199.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-1584.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-1584.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-1584.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-2894.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-2894.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-2894.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-2903.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-2903.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-2903.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-299286.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-299286.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-299286.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-313915.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-313915.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-313915.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-3184.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-3184.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-3184.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-344337.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-344337.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-344337.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-388433.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-388433.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-388433.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-429710.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-429710.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-429710.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-4830.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-4830.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-4830.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-6552.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-6552.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-6552.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-66164.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-66164.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-66164.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-69523.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-69523.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-69523.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-73563.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-73563.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-73563.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-7864.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-7864.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-7864.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-78788.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-78788.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-78788.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-86253.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-86253.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-86253.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-9221.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-9221.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4 레인 logmodel/model/dqn.ckpt-9221.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/2차원 ML.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/KakaoTalk_20190128_142044722.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/logs/events.out.tfevents.1548601402.Q-PC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/logs/events.out.tfevents.1548604661.Q-PC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/logs/events.out.tfevents.1548666965.Q-PC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/logs/events.out.tfevents.1548667360.Q-PC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-1077765.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-1077765.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-1077765.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-1082109.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-1082109.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-1082109.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-1086435.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-1086435.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-1086435.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-1091258.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-1091258.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-1091258.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-1096259.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-1096259.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-1096259.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-126349.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-126349.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-126349.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-128329.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-128329.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-128329.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-130481.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-130481.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-130481.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-132258.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-132258.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-132258.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-134520.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-134520.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-134520.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-307813.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-307813.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-307813.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-311377.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-311377.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-311377.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-313912.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-313912.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-313912.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-316926.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-316926.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-316926.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-319648.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-319648.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-319648.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-54751.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-54751.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-54751.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-56157.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-56157.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-56157.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-57478.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-57478.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-57478.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-58754.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-58754.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-58754.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-60126.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-60126.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/model/dqn.ckpt-60126.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/asf.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/logs/events.out.tfevents.1548601402.Q-PC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/logs/events.out.tfevents.1548604661.Q-PC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/logs/events.out.tfevents.1548666965.Q-PC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/logs/events.out.tfevents.1548667360.Q-PC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/logs/events.out.tfevents.1548668151.Q-PC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-1077765.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-1077765.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-1077765.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-1082109.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-1082109.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-1082109.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-1086435.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-1086435.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-1086435.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-1091258.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-1091258.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-1091258.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-1096259.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-1096259.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-1096259.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-126349.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-126349.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-126349.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-128329.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-128329.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-128329.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-130481.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-130481.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-130481.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-132258.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-132258.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-132258.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-134520.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-134520.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-134520.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-307813.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-307813.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-307813.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-311377.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-311377.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-311377.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-313912.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-313912.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-313912.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-316926.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-316926.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-316926.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-319648.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-319648.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-319648.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-54751.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-54751.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-54751.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-56157.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-56157.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-56157.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-57478.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-57478.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-57478.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-58754.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-58754.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-58754.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-60126.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-60126.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-60126.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-732227.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-732227.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-732227.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-735393.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-735393.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-735393.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-738560.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-738560.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-738560.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-742020.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-742020.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-742020.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-745199.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PastLogModel/GPU 4레인 교차로 logsmodel/model/dqn.ckpt-745199.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/events.out.tfevents.1548676446.Q-PC" beforeDir="false" afterPath="$PROJECT_DIR$/logs/events.out.tfevents.1548676446.Q-PC" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/model/checkpoint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/dqn.ckpt-7001998.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/dqn.ckpt-7001998.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/dqn.ckpt-7001998.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/dqn.ckpt-7023666.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/dqn.ckpt-7023666.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/dqn.ckpt-7023666.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/dqn.ckpt-7042583.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/dqn.ckpt-7042583.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/dqn.ckpt-7042583.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/dqn.ckpt-7067383.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/dqn.ckpt-7067383.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/dqn.ckpt-7067383.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/dqn.ckpt-7084298.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/dqn.ckpt-7084298.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/dqn.ckpt-7084298.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot_game.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot_tensorboard.png" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/agent.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="142" selection-start-line="142" selection-end-line="142" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4237">
+              <caret line="223" selection-start-line="223" selection-end-line="223" />
+              <folding>
+                <element signature="e#35#53#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+              <folding>
+                <element signature="e#115#138#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>_update_car</find>
+      <find>n_action</find>
+      <find>check</find>
+      <find>replay</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/model/checkpoint" />
+        <option value="$PROJECT_DIR$/model.py" />
+        <option value="$PROJECT_DIR$/agent.py" />
+        <option value="$PROJECT_DIR$/game.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="30" />
+    <option name="width" value="1464" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ML_Crossroad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ML_Crossroad" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="ML_Crossroad" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../3차선 4차선 Simple tensorboard 구하기" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\q\Desktop\ML_Crossroad\PastLogModel\4레인 교차로 logmodel" />
+      <recent name="C:\Users\q\Desktop\ML_Crossroad\PastLogModel\GPU 4레인 교차로 logsmodel" />
+      <recent name="C:\Users\q\Desktop\ML_Crossroad\PastLogModel" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\q\Desktop\ML_Crossroad\model" />
+      <recent name="C:\Users\q\Desktop\ML_Crossroad\logs" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8305703f-4225-4122-8ce4-4901bd35c708" name="Default Changelist" comment="" />
+      <created>1548589922198</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1548589922198</updated>
+      <workItem from="1548589923468" duration="16149000" />
+      <workItem from="1548667146041" duration="8118000" />
+      <workItem from="1548748765992" duration="1502000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="25769000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="30" y="0" width="1464" height="1040" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23361823" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/model/checkpoint">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logs/events.out.tfevents.1548604661.Q-PC" />
+    <entry file="file://$PROJECT_DIR$/logs/events.out.tfevents.1548666965.Q-PC" />
+    <entry file="file://$PROJECT_DIR$/logs/events.out.tfevents.1548601402.Q-PC" />
+    <entry file="file://$PROJECT_DIR$/PastLogModel/4레인 교차로 logmodel/KakaoTalk_20190128_142044722.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding>
+            <element signature="e#115#138#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4237">
+          <caret line="223" selection-start-line="223" selection-end-line="223" />
+          <folding>
+            <element signature="e#35#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/screenshot_game.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/screenshot_tensorboard.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="142" selection-start-line="142" selection-end-line="142" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
